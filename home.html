@@ -1,0 +1,103 @@
+<html class = "core">
+<!-- Script will be a seperate file -->
+<script src="linking.js">
+</script>
+<!-- CSS File -->
+<link rel="stylesheet" type="text/css" href="home.css" />
+
+<!-- Need to figure out how to properly link different folders together -->
+<link rel="stylesheet" type="text/css" href="core.css" />
+<link rel="stylesheet" type="text/css" href="footer_header.css" />
+<!-- Should not copy the files into the directory -->
+
+<head>
+	<title>Jacob Abkes</title>
+</head>
+<!-- Top of the page -->
+<h1 class="core" align = "center">
+<!-- Shameless plugs -->
+<input class = "fb" type = "image" align = "left" src = "fb.png" href = "" onclick = "fb();"
+style =" width:100px; height: 50px; border:none;"/>
+Jacob Abkes Undergraduate Student of Software Engineering
+<input class = "gh" type = "image" align = "right" src = "github.png" href = "" onclick = "gh();" 
+style =" width:100px; height: 50px; border:none;"/>
+</h1>
+<div class = "selectionmenu" align = "center">
+<button onclick = "home();" >Home</button>
+<button>More about me</button>
+<button onclick = "resume();">Resume</button>
+<button>Tab4</button>
+
+
+<div class="dropdown" class = "selectionmenu">
+  <button class="selectionmenu">Games</button>
+  <div class="dropdown-content">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+</div>
+</div>
+<!-- Middle of the page -->
+<div class="bio" align = "center">
+
+<div class ="text" class = "core" align = "left">
+<h1 style="line-height: 50%" align = "center">Education<h1>
+<p align = "left">
+  My name is Jacob Abkes. I am an undergraduate 
+  student at Iowa State University. I am currently
+  enrolled in my third year of Software Engineering.
+  I have also been studying the Russian language throughout
+  my enrollment at Iowa State. I plan to graduate in the fall of 2022.
+
+</p>
+
+<h1 style = "line-height: 30%" align = "center">Undergraduate Research<h1>
+<p align = "left">
+  I have recentley worked as a undergraduate researcher under
+  Dr. Janesarri at Iowa State. Our focus was on applications of
+  machine learning. Our main problem that we are working towards
+  solving is to optimize the power consumption of a field
+  surveying drone using Q-learning. This research has taught me a lot
+  about the components and structure behind neural networks. Alongside this
+  I have had the experience of learning new frameworks and tools such as,
+  ROS, Gazebo and Tensorflow.
+</p>
+
+
+<h1 style = "line-height: 30%" align = "center">Computer Science 227 Teacher's Assistant<h1>
+<p align = "left">
+<!-- Talk about being a TA -->
+</p>
+
+<!-- <p align = "left">
+  I enjoy programming, as you would expect, and I also enjoy
+  mathematics and languages. The only good problem is the
+  one that has never been solved!
+</p> -->
+</div>
+
+<div class = "pics" class = "core" align="left">
+  <h2 align="center">Allo</h2>
+</div>
+
+</div>
+
+<!-- Bottom of the page -->
+<div class = "selectionmenu" align = "center">
+<button>Home</button>
+<button onclick = "resume();">Resume</button>
+<button>Tab3</button>
+<button>Tab4</button>
+<!-- This is a dropUP menu, it has all the same properties except bottom:100% -->
+<div class="dropdown" class = "selectionmenu">
+  <button style="border-top: 0px" class="selectionmenu">Games</button>
+  <div class = "dropdown-content" style="bottom:100%;">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+</div>
+</div>
+
+</html>
