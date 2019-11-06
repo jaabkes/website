@@ -1,2 +1,2 @@
 # website
-This repository will track my development of my website.
+This repository will track the development of my website.
