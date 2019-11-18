@@ -1,0 +1,93 @@
+<html class = "core">
+<!-- Script will be a seperate file -->
+<script src="linking.js">
+</script>
+<!-- CSS File -->
+<link rel="stylesheet" type="text/css" href="home.css" />
+
+<!-- Need to figure out how to properly link different folders together -->
+<link rel="stylesheet" type="text/css" href="core.css" />
+<link rel="stylesheet" type="text/css" href="footer_header.css" />
+<!-- Should not copy the files into the directory -->
+
+<head>
+	<title>Jacob Abkes</title>
+</head>
+<!-- Top of the page -->
+<h1 class="core" align = "center">
+<!-- Shameless plugs -->
+<input class = "fb" type = "image" align = "left" src = "fb.png" href = "" onclick = "fb();"
+style =" width:100px; height: 50px; border:none;"/>
+Jacob Abkes Undergraduate Student of Software Engineering
+<input class = "gh" type = "image" align = "right" src = "github.png" href = "" onclick = "gh();" 
+style =" width:100px; height: 50px; border:none;"/>
+</h1>
+<div class = "selectionmenu" align = "center">
+<button onclick = "home();" >Home</button>
+<button>More about me</button>
+<button onclick = "resume();">Resume</button>
+<button>Tab4</button>
+
+
+<div class="dropdown" class = "selectionmenu">
+  <button class="selectionmenu">Games</button>
+  <div class="dropdown-content">
+  <a href="game1.html">Tic-Tac-Toe</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+</div>
+</div>
+<!-- Middle of the page -->
+
+<div class = "body" style = "height: 100%">
+
+
+<div class = "container" ng-app="tictactoe" ng-controller = "control1" align = "center">
+    <h2 align = "center">
+        <button class="reset" id = "reset" ng-click="reset()">Reset</button>
+        <p>The current player is: <span ng-bind = "player"></span></p>
+        <p>The winner is: <span ng-bind = "winner"></span></p>
+    </h2>
+    <div class = "board">
+    <div id = "00" ng-click = "place(0,0)" class = grid-item>{{game.getTile(0,0).player}}</div>
+    <div id = "01" ng-click = "place(0,1)" class = grid-item>{{game.getTile(0,1).player}}</div>
+    <div id = "02" ng-click = "place(0,2)" class = grid-item>{{game.getTile(0,2).player}}</div>
+    <div id = "10" ng-click = "place(1,0)" class = grid-item>{{game.getTile(1,0).player}}</div>
+    <div id = "11" ng-click = "place(1,1)" class = grid-item>{{game.getTile(1,1).player}}</div>
+    <div id = "12" ng-click = "place(1,2)" class = grid-item>{{game.getTile(1,2).player}}</div>
+    <div id = "20" ng-click = "place(2,0)" class = grid-item>{{game.getTile(2,0).player}}</div>
+    <div id = "21" ng-click = "place(2,1)" class = grid-item>{{game.getTile(2,1).player}}</div>
+    <div id = "22" ng-click = "place(2,2)" class = grid-item>{{game.getTile(2,2).player}}</div>
+    </div>
+</div>
+<link rel = "stylesheet" href = "game1.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src = "game1.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+<!-- Bottom of the page -->
+<div class = "selectionmenu" align = "center">
+<button>Home</button>
+<button>Tab2</button>
+<button onclick = "resume();">Resume</button>
+<button>Tab4</button>
+<!-- This is a dropUP menu, it has all the same properties except bottom:100% -->
+<div class="dropdown" class = "selectionmenu">
+  <button style="border-top: 0px" class="selectionmenu">Games</button>
+  <div class = "dropdown-content" style="bottom:100%;">
+  <a href="game1.html">Tic-Tac-Toe</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+</div>
+</div>
+
+</html>
